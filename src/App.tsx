@@ -494,7 +494,7 @@ export default class App extends React.PureComponent {
           // 				</p>`
           // 	return wrapper
           // },
-          language: getUrlParams().get("lang") === "zh" ? ZegoUIKitLanguage.CHS : ZegoUIKitLanguage.ENGLISH,
+          language: getUrlParams().get("lang") === "zh" ? ZegoUIKitLanguage.CHS : ZegoUIKitLanguage.TR,
           // leaveRoomDialogConfig: {
           //   descriptionText: '',
           //   confirmCallback: () => {
@@ -597,7 +597,7 @@ export default class App extends React.PureComponent {
     //@ts-ignore // just for debugger
     window.zp = this.zp;
     this.zp.setCallInvitationConfig({
-      language: getUrlParams().get("lang") === "zh" ? ZegoUIKitLanguage.CHS : ZegoUIKitLanguage.ENGLISH,
+      language: getUrlParams().get("lang") === "zh" ? ZegoUIKitLanguage.CHS : ZegoUIKitLanguage.TR,
       enableNotifyWhenAppRunningInBackgroundOrQuit: true,
       canInvitingInCalling,
       endCallWhenInitiatorLeave,
@@ -1082,8 +1082,9 @@ export default class App extends React.PureComponent {
                 <div className={APP.text}>{isPc() && (this.state.lang === "zh" ? "语言" : "Language")}</div>
                 {this.state.showLangBox && (
                   <div className={APP.lang_box} >
-                    <span onClick={this.setLanguage.bind(this, ZegoUIKitLanguage.CHS)}>中文</span>
                     <span onClick={this.setLanguage.bind(this, ZegoUIKitLanguage.ENGLISH)}>English</span>
+                    <span onClick={this.setLanguage.bind(this, ZegoUIKitLanguage.TR)}>Türkçe</span>
+                    <span onClick={this.setLanguage.bind(this, ZegoUIKitLanguage.DE)}>Deutsch</span>
                   </div>
                 )}
               </div>

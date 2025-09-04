@@ -64,7 +64,7 @@ export class ZimManager {
 		enableCustomCallInvitationWaitingPage: false,
 		enableCustomCallInvitationDialog: false,
 		enableNotifyWhenAppRunningInBackgroundOrQuit: false,
-		language: ZegoUIKitLanguage.ENGLISH,
+		language: ZegoUIKitLanguage.TR,
 		canInvitingInCalling: false,
 		onlyInitiatorCanInvite: false,
 		endCallWhenInitiatorLeave: false,

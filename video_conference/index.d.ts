@@ -361,6 +361,8 @@ declare enum MessagePriority {
 declare enum ZegoUIKitLanguage {
 	CHS = "zh-CN", // 中文
 	ENGLISH = "en-US", // 英文
+	TR = "tr-TR", // 土耳其语
+	DE = "de-DE", // 德语
 }
 
 declare interface ZegoUIKitCreateConfig {

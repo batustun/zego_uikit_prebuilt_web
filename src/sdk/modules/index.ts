@@ -213,7 +213,7 @@ export class ZegoCloudRTCCore {
 			screenSharingConfig: {
 				resolution: ScreenSharingResolution.Auto,
 			},
-			language: ZegoUIKitLanguage.ENGLISH,
+			language: ZegoUIKitLanguage.TR,
 			showMoreButton: true, // 是否显示更多按钮
 			showUserName: true, // 是否显示用户名
 			hideUsersById: [],

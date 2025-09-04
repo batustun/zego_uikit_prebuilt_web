@@ -20,7 +20,7 @@ export class ZegoCloudRTCKitComponent extends React.Component<{
   state = {
     step: this.props.core._config.showPreJoinView ? 0 : 1,
     isSupportWebRTC: true,
-    lang: this.props.core._config.language || ZegoUIKitLanguage.ENGLISH,
+    lang: this.props.core._config.language || ZegoUIKitLanguage.TR,
   };
   async componentDidMount() {
     // const notSupportPhone =
