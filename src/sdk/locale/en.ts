@@ -5,7 +5,7 @@ const en = {
     "global.turnOnCamera": "Turn on camera",
     "global.settings": "Settings",
     "global.documentation": "Documentation",
-    "global.you": "You",
+    "global.you": "You testt",
     "global.flip": "Flip",
     "global.roomDetails": "Room details",
     "global.copied": "Copied",
