@@ -1000,8 +1000,8 @@ export default class App extends React.PureComponent {
     this.zp ? this.zp.setLanguage(language) : window.zp.setLanguage(language);
     this.setState({
       showLangBox: false,
-      lang: language === ZegoUIKitLanguage.CHS ? "zh" : "en",
-      docs: this.docsLink[process.env.REACT_APP_PATH || "video_conference"][language === ZegoUIKitLanguage.CHS ? "zh" : "en"],
+      lang: language === ZegoUIKitLanguage.CHS ? "zh" : "tr",
+      docs: this.docsLink[process.env.REACT_APP_PATH || "video_conference"][language === ZegoUIKitLanguage.CHS ? "zh" : "tr"],
     })
   }
 
