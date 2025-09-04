@@ -591,7 +591,7 @@ export class ZegoCloudRTCCore {
 
 	// 改变多语言对象
 	async changeIntl() {
-		if (this._config.language) {
+		if (this._config.language && i18nMap[this._config.language]) {
 			this.intl = createIntl(
 				{
 					locale: this._config.language,
@@ -599,6 +599,9 @@ export class ZegoCloudRTCCore {
 				},
 				createIntlCache()
 			);
+			console.log("[ZegoCloud] Language changed to:", this._config.language, "Messages found:", !!i18nMap[this._config.language]);
+		} else {
+			console.warn("[ZegoCloud] Language not found in i18nMap:", this._config.language, "Available:", Object.keys(i18nMap));
 		}
 	}
 
