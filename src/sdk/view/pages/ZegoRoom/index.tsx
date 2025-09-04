@@ -2423,7 +2423,7 @@ export class ZegoRoom extends React.PureComponent<ZegoBrowserCheckProp> {
 						className={ZegoRoomCss.reconnect}
 						style={{
 							display: this.state.connecting ? "flex" : "none",
-							backgroundColor: this.state.firstLoading ? "#1C1F2E" : "",
+							backgroundColor: this.state.firstLoading ? "#373d37" : "",
 						}}>
 						<div></div>
 						<p>
